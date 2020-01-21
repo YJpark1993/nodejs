@@ -1,0 +1,14 @@
+function basic_1(n) {
+    var answer = 0;
+    //분할
+    let arr = [];
+    n = n+""
+    for(let i=0; i<n.length; i++) {
+        arr.push(parseInt(n[i]));
+    }
+    //정렬
+    arr.sort((a,b)=> (a < b));
+    answer = parseInt(arr.join(''))
+
+    return answer;
+}
